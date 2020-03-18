@@ -24,3 +24,5 @@ RIGHT JOIN classicmodels.customers as c
 ON o.customerNumber = c.customerNumber 
 WHERE c.salesRepEmployeeNumber IS NULL
 GROUP BY c.customerName 
+
+SELECT
