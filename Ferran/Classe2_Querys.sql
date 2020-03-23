@@ -1,3 +1,5 @@
+-- RESULTAT MALAMENT (FUNCIONA PERO NO CORRECTAMENT)
+
 SELECT DATE_FORMAT(o.orderDate, '%Y-%m') AS 'Year_Month',
 o.orderNumber
 FROM orders AS o
@@ -100,3 +102,5 @@ RIGHT OUTER JOIN orderdetails ON orderdetails.productCode = products.productCode
 WHERE orderdetails.orderNumber BETWEEN 10254 AND 10425
 GROUP BY products.productLine 
 ORDER BY GananciasLinia DESC
+
+
