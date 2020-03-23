@@ -58,12 +58,12 @@ SELECT
 	SUM(CASE WHEN t.Quarter = '2004-4' THEN t.Qty END) AS PY200404,
 	SUM(CASE WHEN t.Quarter = '2005-1' THEN t.Qty END) AS PY200501,
 	SUM(CASE WHEN t.Quarter = '2005-2' THEN t.Qty END) AS PY200501
-FROM (
+FROM(
 	SELECT 
 		CONCAT(YEAR(o.orderDate),'=',QUARTER(o.orderDate) AS Quarter,
 		p.productCode,
 		p.productName,
-		SUM(od.quantityOrdered) AS "Qty"
+		SUM(od.quantityOrdered) AS Qty
 	FROM orderdetails AS od 
 	LEFT JOIN products AS p ON od.productCode = p.productCode
 	LEFT JOIN orders AS o ON od.orderNumber = o.orderNumber
@@ -71,8 +71,11 @@ FROM (
 		o.status != 'Cancelled'
 	GROUP BY 
 		Quarter,
-		od.productCode,
+		p.productCode,
 		p.productName 
 	ORDER BY 
 		Quarter DESC, p.productName 
 	) AS t
+GROUP BY
+	t.productCode,
+	t.productName
