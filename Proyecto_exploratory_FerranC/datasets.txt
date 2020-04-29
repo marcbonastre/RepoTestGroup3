@@ -1,0 +1,6 @@
+https://www.kaggle.com/jsphyg/weather-dataset-rattle-package
+
+https://www.kaggle.com/jessemostipak/hotel-booking-demand
+
+
+https://www.kaggle.com/mvolkerts/home-office-airpi
