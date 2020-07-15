@@ -1,0 +1,2119 @@
+[
+    {
+        "id": "614e7268.8c742c",
+        "type": "tab",
+        "label": "GeneradorElectricidad",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e1792934.fce998",
+        "type": "tab",
+        "label": "Wine",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3b165e58.869cc2",
+        "type": "tab",
+        "label": "Churn",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "bdf0089d.8945b8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Generador Energia",
+        "icon": "fa-industry",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "745f9a09.bb9cb4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Predicción Electricidad:",
+        "tab": "bdf0089d.8945b8",
+        "order": 1,
+        "disp": true,
+        "width": 22,
+        "collapse": false
+    },
+    {
+        "id": "47a76cbf.176824",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#ec4194",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#fbff0a",
+                    "value": "#ec4194",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#636363",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#fffafa",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#cf3a82",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#636363",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#636363",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#f0f048",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#f0f048",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#636363",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ad297736.890248",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Wine",
+        "icon": "local_bar",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "687bce58.e4dee",
+        "type": "ui_group",
+        "z": "",
+        "name": "Calidad esperada:",
+        "tab": "ad297736.890248",
+        "order": 1,
+        "disp": true,
+        "width": 26,
+        "collapse": false
+    },
+    {
+        "id": "e2abf5e9.1c1458",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Churn",
+        "icon": "fa-handshake-o",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6677f6b6.d7d368",
+        "type": "ui_group",
+        "z": "",
+        "name": "Estado Cliente",
+        "tab": "e2abf5e9.1c1458",
+        "order": 1,
+        "disp": true,
+        "width": 22,
+        "collapse": false
+    },
+    {
+        "id": "d7f3002d.42c0c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 3,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "1e53c857.0bbe68",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 6,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "fa686e67.971d2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 9,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "b92596ba.835fb8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 12,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "12b9fea4.d595e1",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6b90d380.ae4bcc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f686a91f.68eab8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5760fd95.963274",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 27,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "64e8b18a.b8831",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 30,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "9bed8f51.2fc79",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 33,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "dec00043.abc27",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "687bce58.e4dee",
+        "order": 36,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "936980ee.41d77",
+        "type": "ui_group",
+        "z": "",
+        "name": "Consums",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "29",
+        "collapse": false
+    },
+    {
+        "id": "f27888d.3cf7378",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 2,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "6148c9c9.1599b8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ac7a0b84.7e81c8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9d0456a0.d0e058",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 10,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "d9326fd0.bf226",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b81599f8.8eefa8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 14,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "77b7382d.aa4638",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 16,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "72761b7c.3744a4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "6677f6b6.d7d368",
+        "order": 18,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "2127717c.51a88e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "745f9a09.bb9cb4",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "39bc5e08.819b72",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "745f9a09.bb9cb4",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "75e3e4db.7babdc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "745f9a09.bb9cb4",
+        "order": 8,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "8c65f780.e870d8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "745f9a09.bb9cb4",
+        "order": 9,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "4c8cd36a.c8eccc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "745f9a09.bb9cb4",
+        "order": 11,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "d338ea27.d02468",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "745f9a09.bb9cb4",
+        "order": 12,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "3978914e.60573e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "745f9a09.bb9cb4",
+        "order": 14,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "bb976080.30d01",
+        "type": "exec",
+        "z": "614e7268.8c742c",
+        "command": "cd /home/IMLUSER/Python/GeneradorElectricidad && python3",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "d03d73ef.45cd3",
+                "a1e5a043.b5444"
+            ],
+            [
+                "e8e89e67.acf1a"
+            ],
+            [
+                "e9bc71.77b1939"
+            ]
+        ]
+    },
+    {
+        "id": "a0d77465.3d7898",
+        "type": "inject",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "electricidad.py",
+        "payloadType": "str",
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "bb976080.30d01"
+            ]
+        ]
+    },
+    {
+        "id": "d03d73ef.45cd3",
+        "type": "debug",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e8e89e67.acf1a",
+        "type": "debug",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e9bc71.77b1939",
+        "type": "debug",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "494e39f7.b12e08",
+        "type": "ui_button",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "group": "745f9a09.bb9cb4",
+        "order": 10,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#CF2A7A",
+        "icon": "",
+        "payload": "electricidad.py",
+        "payloadType": "str",
+        "topic": "start",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "292c83eb.9a28ac",
+                "bb976080.30d01",
+                "bacb8b7e.e6c7d8"
+            ]
+        ]
+    },
+    {
+        "id": "292c83eb.9a28ac",
+        "type": "http request",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://api.openweathermap.org/data/2.5/weather?q=Ames&appid=c9acde17731d1859e92b163fcc54aaa4",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "301caa32.06f066"
+            ]
+        ]
+    },
+    {
+        "id": "c118d2ac.859e2",
+        "type": "debug",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "6126d1eb.0900f",
+        "type": "inject",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "494e39f7.b12e08"
+            ]
+        ]
+    },
+    {
+        "id": "301caa32.06f066",
+        "type": "json",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 580,
+        "wires": [
+            [
+                "c118d2ac.859e2",
+                "aa94529b.3ed1a"
+            ]
+        ]
+    },
+    {
+        "id": "aa94529b.3ed1a",
+        "type": "function",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "func": "msg.temp = (msg.payload.main.temp + \"ºK\" )\nmsg.hum = msg.payload.main.humidity + \"%\"\nmsg.pres = msg.payload.main.pressure + \"\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 580,
+        "wires": [
+            [
+                "22ddfb60.fd0264",
+                "aa5504c2.b7dbe8",
+                "6f9fb832.141b48",
+                "da0a5408.3a0898"
+            ]
+        ]
+    },
+    {
+        "id": "22ddfb60.fd0264",
+        "type": "debug",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "aa5504c2.b7dbe8",
+        "type": "ui_text",
+        "z": "614e7268.8c742c",
+        "group": "745f9a09.bb9cb4",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Temperatura:</font>",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.temp}} </font>",
+        "layout": "row-center",
+        "x": 940,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "6f9fb832.141b48",
+        "type": "ui_text",
+        "z": "614e7268.8c742c",
+        "group": "745f9a09.bb9cb4",
+        "order": 3,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Humedad:</font>",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.hum}} </font>",
+        "layout": "row-center",
+        "x": 930,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "da0a5408.3a0898",
+        "type": "ui_text",
+        "z": "614e7268.8c742c",
+        "group": "745f9a09.bb9cb4",
+        "order": 7,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Presión:</font>",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.pres}} </font>",
+        "layout": "row-center",
+        "x": 920,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "eb584878.65ec68",
+        "type": "ui_text",
+        "z": "614e7268.8c742c",
+        "group": "745f9a09.bb9cb4",
+        "order": 5,
+        "width": 12,
+        "height": 1,
+        "name": "Electricidad esperada",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-center",
+        "x": 1100,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2c330b95.5c99b4",
+        "type": "debug",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a1e5a043.b5444",
+        "type": "function",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "func": "var electricidad = msg.payload\nelectricidad = electricidad.replace(\"[\", \"\");\nelectricidad = electricidad.replace(\"]\", \"\");\nmsg.payload=electricidad+\"Kwh\"\nmsg.topic = \"finish\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 880,
+        "y": 240,
+        "wires": [
+            [
+                "2c330b95.5c99b4",
+                "eb584878.65ec68",
+                "bacb8b7e.e6c7d8"
+            ]
+        ]
+    },
+    {
+        "id": "77631263.a7f89c",
+        "type": "exec",
+        "z": "e1792934.fce998",
+        "command": "cd /home/IMLUSER/Python/Wine && python3",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 450,
+        "y": 120,
+        "wires": [
+            [
+                "66a6549d.48e0ec",
+                "d36af2c5.e68dd"
+            ],
+            [
+                "73d92896.680a48"
+            ],
+            [
+                "83064b2d.6f74b8"
+            ]
+        ]
+    },
+    {
+        "id": "5f929130.e953f",
+        "type": "inject",
+        "z": "e1792934.fce998",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "quality.py 5 0.12 0.25 2 0.3 25 10 1 3.3 0.62 10.5",
+        "payloadType": "str",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "77631263.a7f89c"
+            ]
+        ]
+    },
+    {
+        "id": "66a6549d.48e0ec",
+        "type": "debug",
+        "z": "e1792934.fce998",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "73d92896.680a48",
+        "type": "debug",
+        "z": "e1792934.fce998",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "83064b2d.6f74b8",
+        "type": "debug",
+        "z": "e1792934.fce998",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6b85a337.49ebdc",
+        "type": "ui_button",
+        "z": "e1792934.fce998",
+        "name": "",
+        "group": "687bce58.e4dee",
+        "order": 24,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#CF2A7A",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "start",
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "2c848aaa.29fc16",
+                "e5ef0c7b.eb094"
+            ]
+        ]
+    },
+    {
+        "id": "66eda977.4e5f58",
+        "type": "inject",
+        "z": "e1792934.fce998",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 460,
+        "y": 340,
+        "wires": [
+            [
+                "6b85a337.49ebdc"
+            ]
+        ]
+    },
+    {
+        "id": "4a273208.d9d23c",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 20,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-center",
+        "x": 1050,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fb91644b.77fa88",
+        "type": "debug",
+        "z": "e1792934.fce998",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d36af2c5.e68dd",
+        "type": "function",
+        "z": "e1792934.fce998",
+        "name": "",
+        "func": "var wine = msg.payload\nwine = wine.replace(\"[\", \"\");\nwine = wine.replace(\"]\", \"\");\nmsg.payload=wine\nmsg.topic = \"finish\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 820,
+        "y": 100,
+        "wires": [
+            [
+                "fb91644b.77fa88",
+                "4a273208.d9d23c",
+                "e5ef0c7b.eb094"
+            ]
+        ]
+    },
+    {
+        "id": "7fd5d920.792918",
+        "type": "comment",
+        "z": "e1792934.fce998",
+        "name": "Input",
+        "info": "python3 quality.py 5 0.12 0.25 2 0.3 25 10 1 3.3 0.62 10.5",
+        "x": 130,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7db16a92.459754",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Fixed Acidity</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 1,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "fA",
+        "min": "0",
+        "max": "20",
+        "step": "0.1",
+        "x": 440,
+        "y": 640,
+        "wires": [
+            [
+                "c0633161.f571a",
+                "1036827f.6fa65e",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "c0633161.f571a",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "fa",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a97131.5645bed",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Volatile Acidity</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 4,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "vA",
+        "min": "0",
+        "max": "2",
+        "step": "0.1",
+        "x": 440,
+        "y": 680,
+        "wires": [
+            [
+                "af2f4596.512798",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "1036827f.6fa65e",
+        "type": "debug",
+        "z": "e1792934.fce998",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "af2f4596.512798",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "name": "va",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "fa7da203.720fb",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Ácido Cítrico</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 7,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "cA",
+        "min": "0",
+        "max": "1",
+        "step": "0.1",
+        "x": 440,
+        "y": 720,
+        "wires": [
+            [
+                "c7e98eb6.e73bd",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "c7e98eb6.e73bd",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 8,
+        "width": 4,
+        "height": 1,
+        "name": "ca",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "3958440a.5f943c",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Azucar Residual</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 10,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "rS",
+        "min": "0",
+        "max": "20",
+        "step": "0.1",
+        "x": 450,
+        "y": 760,
+        "wires": [
+            [
+                "4cfe3f5.f7dc4c",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "4cfe3f5.f7dc4c",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 11,
+        "width": 4,
+        "height": 1,
+        "name": "ra",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "450668f1.de9d18",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Cloruros</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 13,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "c",
+        "min": "0",
+        "max": "1",
+        "step": "0.01",
+        "x": 420,
+        "y": 800,
+        "wires": [
+            [
+                "d2641d27.89098",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "d2641d27.89098",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 14,
+        "width": 4,
+        "height": 1,
+        "name": "c",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "1cd0666d.76e2fa",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Dioxido de azufre libre</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 17,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "fSD",
+        "min": "0",
+        "max": "80",
+        "step": "1",
+        "x": 470,
+        "y": 840,
+        "wires": [
+            [
+                "c6c805cd.0f98a8",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "c6c805cd.0f98a8",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 18,
+        "width": 4,
+        "height": 1,
+        "name": "fsd",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "a0600fcf.bb72d",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Dioxido de azufre total</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 21,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "tSD",
+        "min": "0",
+        "max": "300",
+        "step": "1",
+        "x": 470,
+        "y": 880,
+        "wires": [
+            [
+                "f2cb81a7.69f1",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "f2cb81a7.69f1",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 22,
+        "width": 4,
+        "height": 1,
+        "name": "tsd",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "7f4b205c.41c39",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Densidad</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 25,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "d",
+        "min": "0.99",
+        "max": "1",
+        "step": "0.01",
+        "x": 430,
+        "y": 920,
+        "wires": [
+            [
+                "f109d2f9.2161e",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "f109d2f9.2161e",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 26,
+        "width": 4,
+        "height": 1,
+        "name": "d",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "c70b5292.ccc3",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >pH</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 28,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "pH",
+        "min": "2",
+        "max": "5",
+        "step": "0.1",
+        "x": 410,
+        "y": 960,
+        "wires": [
+            [
+                "a8cc353d.f49088",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "a8cc353d.f49088",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 29,
+        "width": 4,
+        "height": 1,
+        "name": "ph",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "78040630.0ea888",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Sulfatos</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 31,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "s",
+        "min": "0",
+        "max": "3",
+        "step": "0.1",
+        "x": 420,
+        "y": 1000,
+        "wires": [
+            [
+                "17037990.7f4246",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "17037990.7f4246",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 32,
+        "width": 4,
+        "height": 1,
+        "name": "s",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "d03aaafc.a3bbe8",
+        "type": "ui_slider",
+        "z": "e1792934.fce998",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Alcohol</font>",
+        "tooltip": "",
+        "group": "687bce58.e4dee",
+        "order": 34,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "a",
+        "min": "6",
+        "max": "20",
+        "step": "0.1",
+        "x": 420,
+        "y": 1040,
+        "wires": [
+            [
+                "7fd7f1ec.40097",
+                "9609e1db.ace8"
+            ]
+        ]
+    },
+    {
+        "id": "7fd7f1ec.40097",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 35,
+        "width": 4,
+        "height": 1,
+        "name": "a",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-left",
+        "x": 830,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "9609e1db.ace8",
+        "type": "function",
+        "z": "e1792934.fce998",
+        "name": "",
+        "func": "var value = msg.payload\nflow.set(msg.topic,value)\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1090,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c848aaa.29fc16",
+        "type": "function",
+        "z": "e1792934.fce998",
+        "name": "",
+        "func": "a = flow.get(\"a\")\nc = flow.get(\"c\")\ncA = flow.get(\"cA\")\nd = flow.get(\"d\")\nfA = flow.get(\"fA\")\nfSD = flow.get(\"fSD\")\npH = flow.get(\"pH\")\nrS = flow.get(\"rS\")\ns = flow.get(\"s\")\ntSD = flow.get(\"tSD\")\nvA = flow.get(\"vA\")\n\nmsg.payload = \"quality.py \"+fA+\" \"+vA+\" \"+c+\" \"+rS+\" \"+c+\" \"+fSD+\" \"+tSD+\" \"+d+\" \"+pH+\" \"+s+\" \"+a;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "77631263.a7f89c"
+            ]
+        ]
+    },
+    {
+        "id": "e5ef0c7b.eb094",
+        "type": "function",
+        "z": "e1792934.fce998",
+        "name": "",
+        "func": "if (msg.topic == \"start\")\n{\n    msg.payload = \"Calculando la nueva calidad\"   \n}\nelse\n{\n    msg.payload = \"La nueva calidad es..\"\n    \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 880,
+        "y": 240,
+        "wires": [
+            [
+                "1391885a.e082f8"
+            ]
+        ]
+    },
+    {
+        "id": "1391885a.e082f8",
+        "type": "ui_text",
+        "z": "e1792934.fce998",
+        "group": "687bce58.e4dee",
+        "order": 16,
+        "width": 8,
+        "height": 1,
+        "name": "actualizando",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-center",
+        "x": 1070,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "31b65625.65f5da",
+        "type": "exec",
+        "z": "3b165e58.869cc2",
+        "command": "cd /home/IMLUSER/Python/Churn && python3",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 440,
+        "y": 140,
+        "wires": [
+            [
+                "e165788e.a05dd8",
+                "189d4403.dba72c"
+            ],
+            [
+                "a7bfca3f.c04d28"
+            ],
+            [
+                "5ca0f235.98268c"
+            ]
+        ]
+    },
+    {
+        "id": "c0ba7ab8.32dbf8",
+        "type": "inject",
+        "z": "3b165e58.869cc2",
+        "name": "client.py",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "client.py 1 0 1 0 1 0 1",
+        "payloadType": "str",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "31b65625.65f5da"
+            ]
+        ]
+    },
+    {
+        "id": "e165788e.a05dd8",
+        "type": "debug",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a7bfca3f.c04d28",
+        "type": "debug",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5ca0f235.98268c",
+        "type": "debug",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "af805aa9.8ebe18",
+        "type": "ui_button",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "group": "6677f6b6.d7d368",
+        "order": 13,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#CF2A7A",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "start",
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [
+                "e5deb42a.dea158",
+                "d1d755b8.7e86c8"
+            ]
+        ]
+    },
+    {
+        "id": "7f14af18.e9e7c",
+        "type": "inject",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "af805aa9.8ebe18"
+            ]
+        ]
+    },
+    {
+        "id": "cade9034.c93d1",
+        "type": "ui_text",
+        "z": "3b165e58.869cc2",
+        "group": "6677f6b6.d7d368",
+        "order": 8,
+        "width": 14,
+        "height": 1,
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >El cliente tiene la probabilidad de irse? </font>",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "col-center",
+        "x": 1280,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d339face.140468",
+        "type": "debug",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "189d4403.dba72c",
+        "type": "function",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "func": "var client = msg.payload\nclient = client.replace(\"[\", \"\");\nclient = client.replace(\"]\", \"\");\n\nif (client==\"1\\n\"){client=\"Si\"}\nelse {client=\"No\"}\n\nmsg.payload = client\nmsg.topic = \"finish\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 120,
+        "wires": [
+            [
+                "d339face.140468",
+                "cade9034.c93d1",
+                "d1d755b8.7e86c8"
+            ]
+        ]
+    },
+    {
+        "id": "e821c847.2204e8",
+        "type": "comment",
+        "z": "3b165e58.869cc2",
+        "name": "Input",
+        "info": "python3 quality.py 5 0.12 0.25 2 0.3 25 10 1 3.3 0.62 10.5",
+        "x": 110,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e5deb42a.dea158",
+        "type": "function",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "func": "j = flow.get(\"j\")\nso = flow.get(\"so\")\nbo = flow.get(\"bo\")\nat = flow.get(\"at\")\ntv = flow.get(\"tv\")\nc = flow.get(\"c\")\nfo = flow.get(\"fo\")\n\nmsg.payload = \"client.py \"+j+\" \"+so+\" \"+bo+\" \"+at+\" \"+tv+\" \"+c+\" \"+fo;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 240,
+        "wires": [
+            [
+                "31b65625.65f5da"
+            ]
+        ]
+    },
+    {
+        "id": "d1d755b8.7e86c8",
+        "type": "function",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "func": "if (msg.topic == \"start\")\n{\n    msg.payload = \"Calculando el estado más probable del cliente..\"   \n}\nelse\n{\n    msg.payload = \"\"\n    \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 260,
+        "wires": [
+            [
+                "7117968a.cbc2b8"
+            ]
+        ]
+    },
+    {
+        "id": "7117968a.cbc2b8",
+        "type": "ui_text",
+        "z": "3b165e58.869cc2",
+        "group": "6677f6b6.d7d368",
+        "order": 5,
+        "width": 14,
+        "height": 1,
+        "name": "actualizando",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}}</font>",
+        "layout": "row-center",
+        "x": 1050,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "93e140ef.2d6a1",
+        "type": "ui_switch",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Jubilado</font>",
+        "tooltip": "",
+        "group": "6677f6b6.d7d368",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "j",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "9a49775b.327e48"
+            ]
+        ]
+    },
+    {
+        "id": "67a9237f.2f357c",
+        "type": "ui_switch",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Seguridad Online</font>",
+        "tooltip": "",
+        "group": "6677f6b6.d7d368",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "so",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 530,
+        "y": 520,
+        "wires": [
+            [
+                "9a49775b.327e48"
+            ]
+        ]
+    },
+    {
+        "id": "52843347.5e794c",
+        "type": "ui_switch",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Backup Online</font>",
+        "tooltip": "",
+        "group": "6677f6b6.d7d368",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "bo",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 520,
+        "y": 560,
+        "wires": [
+            [
+                "9a49775b.327e48"
+            ]
+        ]
+    },
+    {
+        "id": "7899cdac.6d8c74",
+        "type": "ui_switch",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >TV en streaming</font>",
+        "tooltip": "",
+        "group": "6677f6b6.d7d368",
+        "order": 15,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "tv",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 530,
+        "y": 640,
+        "wires": [
+            [
+                "9a49775b.327e48"
+            ]
+        ]
+    },
+    {
+        "id": "4e9580c9.c240e",
+        "type": "ui_switch",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Apoyo técnico</font>",
+        "tooltip": "",
+        "group": "6677f6b6.d7d368",
+        "order": 17,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "at",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 520,
+        "y": 600,
+        "wires": [
+            [
+                "9a49775b.327e48"
+            ]
+        ]
+    },
+    {
+        "id": "9e361fc9.82982",
+        "type": "ui_switch",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Contrato</font>",
+        "tooltip": "",
+        "group": "6677f6b6.d7d368",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "c",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 500,
+        "y": 680,
+        "wires": [
+            [
+                "9a49775b.327e48"
+            ]
+        ]
+    },
+    {
+        "id": "c6d61b21.4476f8",
+        "type": "ui_switch",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "label": "<Font Size = 5><font color= #FFF333 >Facturación Online</font>",
+        "tooltip": "",
+        "group": "6677f6b6.d7d368",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "fo",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 540,
+        "y": 720,
+        "wires": [
+            [
+                "9a49775b.327e48"
+            ]
+        ]
+    },
+    {
+        "id": "9a49775b.327e48",
+        "type": "function",
+        "z": "3b165e58.869cc2",
+        "name": "",
+        "func": "var value = msg.payload\nflow.set(msg.topic,value)\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1020,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bacb8b7e.e6c7d8",
+        "type": "function",
+        "z": "614e7268.8c742c",
+        "name": "",
+        "func": "if (msg.topic == \"start\")\n{\n    msg.payload = \"Calculando la electricidad esperada..\"   \n}\nelse\n{\n    msg.payload = \"La electricidad esperada es..\"\n    \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 940,
+        "y": 420,
+        "wires": [
+            [
+                "ed850c7e.79da1"
+            ]
+        ]
+    },
+    {
+        "id": "ed850c7e.79da1",
+        "type": "ui_text",
+        "z": "614e7268.8c742c",
+        "group": "745f9a09.bb9cb4",
+        "order": 2,
+        "width": 14,
+        "height": 1,
+        "name": "actualizando",
+        "label": "",
+        "format": "<Font Size = 5><font color= #FFF333 >{{msg.payload}} </font>",
+        "layout": "row-center",
+        "x": 1130,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4742dde5.a68e44",
+        "type": "ui_template",
+        "z": "614e7268.8c742c",
+        "group": "745f9a09.bb9cb4",
+        "name": "Logo / Clock",
+        "order": 13,
+        "width": 5,
+        "height": 1,
+        "format": "<script id=\"clockScript1\" type=\"text/javascript\">\n    var clockInterval;\n    $(function () {\n        if (clockInterval) return;\n        \n        //add logo\n        var div1 = $('<div/>');\n        var link = $('<a href= \"https://www.fundaciocim.org/es\" alt=CIM-UPC web>');\n            \n        var logo = new Image();\n        logo.id = 'barcelonatelco';\n        logo.src = '/barcelonatelco.png';\n        logo.height = 50;\n        \n        link.append(logo);   \n        div1.append(link);\n        div1[0].style.margin = '10px auto';\n        \n        //add clock\n        var div2 = $('<div/>');\n        var p = $('<p/>');\n\n        div2.append(p);\n        div2[0].style.margin = '5px';\n        div2[0].style.color= 'black';\n        function displayTime() {\n            p.text(new Date().toLocaleString());\n        }\n        \n        clockInterval = setInterval(displayTime, 1000);\n\n        //add to toolbar when it's available\n        var addToToolbarTimer;\n        \n        function addToToolbar() {\n            var toolbar = $('.md-toolbar-tools');\n            \n            if(!toolbar.length) return;\n            \n            toolbar.append(div1);\n            toolbar.append(div2);\n            \n            clearInterval(addToToolbarTimer);\n        }\n        addToToolbarTimer = setInterval(addToToolbar, 100);\n    });\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 230,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    }
+]
