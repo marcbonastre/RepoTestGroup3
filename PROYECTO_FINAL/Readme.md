@@ -16,5 +16,5 @@ En este zip hay todos los modelos almacenados.
 
 ## Autores
 - [@Ferrancf5](https://github.com/Ferrancf5)
-- [@marcbonastre] (https://github.com/marcbonastre)
+- [@marcbonastre](https://github.com/marcbonastre)
 - [Cristina] 
